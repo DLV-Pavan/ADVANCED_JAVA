@@ -16,7 +16,7 @@ public class JDBCDemo {
 		Statement stmt = con.createStatement();
 		
 		System.out.println("Statement create successfully");
-		String qry = "create table hello(did int,dname varchar(20))";
+		String qry = "create table if not exists hello (did int,dname varchar(20))";
 		
 		stmt.execute(qry);
 		System.out.println("table created successfully");
@@ -25,3 +25,4 @@ public class JDBCDemo {
 		con.close();
 	}
 }
+
