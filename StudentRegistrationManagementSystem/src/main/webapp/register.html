@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Student</title>
+</head>
+<body>
+    <h2>Register Student</h2>
+    <form action="student" method="get">
+        <!-- Hidden input tells StudentServlet to run the register block -->
+        <input type="hidden" name="action" value="register">
+
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>Course:</label>
+        <select name="course" required>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="Web Dev">Web Dev</option>
+        </select><br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="SQL"> SQL<br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="3" cols="30" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <a href="index.html">Back to Main Page</a>
+</body>
+</html>

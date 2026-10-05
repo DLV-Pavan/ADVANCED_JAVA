@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Student</title>
+</head>
+<body>
+    <h2>Delete Student by ID</h2>
+    <form action="student" method="get">
+        <!-- Hidden input tells StudentServlet to run the delete block -->
+        <input type="hidden" name="action" value="delete">
+
+        <label>Enter Student ID to Delete:</label>
+        <input type="number" name="id" required>
+        <button type="submit">Delete</button>
+    </form>
+    <br>
+    <a href="index.html">Back to Main Page</a>
+</body>
+</html>

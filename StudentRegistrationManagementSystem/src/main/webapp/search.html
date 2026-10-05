@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Student</title>
+</head>
+<body>
+    <h2>Search Student by ID</h2>
+    <form action="student" method="get">
+        <!-- Hidden input tells StudentServlet to run the search block -->
+        <input type="hidden" name="action" value="search">
+        
+        <label>Enter Student ID:</label>
+        <input type="number" name="id" required>
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <a href="index.html">Back to Main Page</a>
+</body>
+</html>
