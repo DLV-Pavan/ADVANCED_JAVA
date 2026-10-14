@@ -2,23 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>User Login</title>
+    <title>Employee Login</title>
 </head>
 <body>
 
-<form action="userlogin" method="get">
+    <h1>Employee Login</h1>
 
-    Username:
-    <input type="text" name="username">
-    <br><br>
-
-    Password:
-    <input type="password" name="password">
-    <br><br>
-
-    <input type="submit" value="Login">
-
-</form>
+    <form action="login" method="post">
+        <label for="empName">Enter Employee Login Name:</label>
+        <input type="text" id="empName" name="employeeName" required>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
 
 </body>
 </html>
