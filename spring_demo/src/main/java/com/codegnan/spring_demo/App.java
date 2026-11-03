@@ -7,8 +7,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        ApplicationContext context =
-                new ClassPathXmlApplicationContext("spring.xml");
+    	ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 
         HelloSpring obj = context.getBean(
                 "helloSpring", HelloSpring.class);
